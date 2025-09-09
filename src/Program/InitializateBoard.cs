@@ -5,9 +5,7 @@ public static class InitializateBoard
 {
     public static bool[,] Initializate() //Genera un arreglo de booleanos (tablero) en base a lo que devuelve TextLecture.BoardString();
     {
-        string url = TextLecture.BoardString();
-        string content = File.ReadAllText(url);
-        string[] contentLines = content.Split('\n');
+        string[] contentLines = TextLecture.ReadTxtFile("board.txt"); // Aca llamamos al SRP. Hasta queda la solucion con menos lineas de codigo y hace lo mismo. No hay que hacer ningun split, ni nada. solo llamamos a nuestra clase TextLecture.
         bool[,] board = new bool[contentLines.Length, contentLines[0].Length];
         for (int  y=0; y<contentLines.Length;y++)
         { 
