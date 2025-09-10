@@ -1,8 +1,8 @@
 namespace Ucu.Poo.GameOfLife;
 
-public static class Epoch
+public static class Epoch 
 {
-    public static bool[,] RunEpoch(bool[,] gameBoard)
+    public static bool[,] RunEpoch(bool[,] gameBoard) //Calcula el como va a ser el siguiente estado del tablero.
     {
         int boardWidth = gameBoard.GetLength(0);
         int boardHeight = gameBoard.GetLength(1);

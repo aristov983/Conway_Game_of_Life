@@ -6,9 +6,9 @@ namespace Ucu.Poo.GameOfLife;
 
 public class PrintBoard
 {
-    public static void Print(bool[,] board, int height, int width)
+    public static void Print(bool[,] board, int height, int width) //Imprime el tablero en consola
     {
-        Console.Clear();
+        Console.Clear(); //Limpia la consola
         StringBuilder s = new StringBuilder();
         for (int y = 0; y < height; y++)
         {
